@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Recommendation Chatbot</title>
+</head>
+<body>
+    <h1>Welcome to My Chatbot!</h1>
+    <p>Ask me for a book recommendation.</p>
+
+    </body><script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "c37012c4-69d5-46f0-9057-143e6efb9d0f", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "a6f92ff8-0152-416c-a392-3be65cef21aa", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</html>
